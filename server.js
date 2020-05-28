@@ -8,18 +8,6 @@ app.use(express.urlencoded());
 
 app.use('/learnmusiconline.com', express.static('learnmusiconline.com'));
 
-const URI ="mongodb+srv://Ninad:Ninad@2020@cluster0-u2bzt.mongodb.net/test";
-
-const connectDB = async () => {
-  await mongoose.connect(URI, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true
-  });
-  console.log('db connected..!');
-};
-
-module.exports = connectDB;
-
 app.set('view engine', 'pug');
 
 app.set('views', path.join(__dirname, 'learnmusiconline.com/pug'));
