@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | learnmusiconline.com</title>
+    style
+        include ../css/home.css
+</head>
+
+<body> 
+    <div class="page">
+    <div class="background">
+        <header class="navi">
+            <ul>
+                <li class="logo"><img src="/learnmusiconline.com/img/Logo.jpg" alt=""></li>
+                <li class="lbutton" id="active"><a href="/">Home</a></li>
+                <li class="lbutton"><a href="/courses">Courses</a></li>
+                <li><input type="text" name="search" id="search" placeholder="search"></li>
+                <li class="lbutton"><a href="/about">About</a></li>
+                <li class="lbutton"><button onclick="signIn()">Sign up</button></li>
+            </ul>
+        </header>
+        <h1>Learn to touch sole...</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime sequi ipsum voluptatum in iusto
+            officiis voluptatibus aperiam voluptatem quasi? A, vel! Magnam fugit neque consequatur commodi quasi.</p>
+    </div>
+    <div class="content">
+        <div class="box1 box">
+            <img src="/learnmusiconline.com/img/knowledgge.jpg">
+            <div class="para">
+            <h2>Get Knowledge</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptatem blanditiis a? Molestias eos animi dolor ipsa veniam mollitia rerum perspiciatis laudantium aspernatur, similique odio totam qui, quibusdam, sunt unde exercitationem beatae. Nisi aspernatur culpa quas tempora minus enim. Tenetur illo, ullam dolores tempora quisquam eligendi quia vel excepturi a voluptatibus provident molestiae iure earum culpa consequuntur. Error sit praesentium repellat veritatis impedit? Quo earum voluptas consequatur numquam facilis repellendus.</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <img src="/learnmusiconline.com/img/practice.jpg">
+             <div class="para">
+            <h2>Get Practiced</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptatem blanditiis a? Molestias eos animi dolor ipsa veniam mollitia rerum perspiciatis laudantium aspernatur, similique odio totam qui, quibusdam, sunt unde exercitationem beatae. Nisi aspernatur culpa quas tempora minus enim. Tenetur illo, ullam dolores tempora quisquam eligendi quia vel excepturi a voluptatibus provident molestiae iure earum culpa consequuntur. Error sit praesentium repellat veritatis impedit? Quo earum voluptas consequatur numquam facilis repellendus.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <img src="/learnmusiconline.com/img/skill.jpg">
+            <div class="para">
+            <h2>Get Skilled</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptatem blanditiis a? Molestias eos animi dolor ipsa veniam mollitia rerum perspiciatis laudantium aspernatur, similique odio totam qui, quibusdam, sunt unde exercitationem beatae. Nisi aspernatur culpa quas tempora minus enim. Tenetur illo, ullam dolores tempora quisquam eligendi quia vel excepturi a voluptatibus provident molestiae iure earum culpa consequuntur. Error sit praesentium repellat veritatis impedit? Quo earum voluptas consequatur numquam facilis repellendus.</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <img src="/learnmusiconline.com/img/show skill.jpg">
+            <div class="para">
+            <h2>Show Your Skills</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptatem blanditiis a? Molestias eos animi dolor ipsa veniam mollitia rerum perspiciatis laudantium aspernatur, similique odio totam qui, quibusdam, sunt unde exercitationem beatae. Nisi aspernatur culpa quas tempora minus enim. Tenetur illo, ullam dolores tempora quisquam eligendi quia vel excepturi a voluptatibus provident molestiae iure earum culpa consequuntur. Error sit praesentium repellat veritatis impedit? Quo earum voluptas consequatur numquam facilis repellendus.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <img src="/learnmusiconline.com/img/certification.jpg">
+            <div class="para">
+            <h2>Get Certificated</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptatem blanditiis a? Molestias eos animi dolor ipsa veniam mollitia rerum perspiciatis laudantium aspernatur, similique odio totam qui, quibusdam, sunt unde exercitationem beatae. Nisi aspernatur culpa quas tempora minus enim. Tenetur illo, ullam dolores tempora quisquam eligendi quia vel excepturi a voluptatibus provident molestiae iure earum culpa consequuntur. Error sit praesentium repellat veritatis impedit? Quo earum voluptas consequatur numquam facilis repellendus.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="signup">
+    <div class="form">
+        <button onclick="signIn()">close</button>
+        <form action="backend.js" class="inner">
+            <h1>Sign up</h1>
+            <div class="coll">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="coll">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="coll">
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="coll">
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="coll">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="coll">
+                <label for="cpassword">Confirm Password: </label>
+                <input type="password" name="cpassword" id="cpassword">
+            </div>
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
+</div>
+<script src="/learnmusiconline.com/js/index.js"></script>
+</body>
+
+</html>

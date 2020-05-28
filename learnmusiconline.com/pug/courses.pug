@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | learnmusiconline.com</title>
+     style
+        include ../css/courses.css
+</head>
+
+<body>
+    <div class="page">
+        <div class="background">
+            <header class="navi">
+                <ul>
+                    <li class="logo"><img src="/learnmusiconline.com/img/Logo.jpg" alt=""></li>
+                    <li class="lbutton"><a href="/">Home</a></li>
+                    <li class="lbutton" id="active"><a href="/courses">Courses</a></li>
+                    <li><input type="text" name="search" id="search" placeholder="search"></li>
+                    <li class="lbutton"><a href="/about">About</a></li>
+                    <li class="lbutton"><button onclick="signIn()">Sign up</button></li>
+                </ul>
+            </header>
+        </div>
+        <div class="contain">
+            <div class="course" id="course1">
+                <div class="imgcont"><img src="/learnmusiconline.com/img/Guitar.jpg" alt="">
+                </div>
+                <h1>Guitar</h1>
+            </div>
+            <div class="course" id="course2">
+                <div class="imgcont"><img src="/learnmusiconline.com/img/piano.jpg" alt="">
+                </div>
+                <h1>Piano</h1>
+            </div>
+            <div class="course" id="course3">
+                <div class="imgcont"><img src="/learnmusiconline.com/img/violin.jpg" alt="">
+                </div>
+                <h1>Violin</h1>
+            </div>
+            <div class="course" id="course4">
+                <div class="imgcont"><img src="/learnmusiconline.com/img/Drum.jpg" alt="">
+                </div>
+                <h1>Drum</h1>
+            </div>
+            <div class="course" id="course5">
+                <div class="imgcont"><img src="/learnmusiconline.com/img/Harmonium.jpg" alt=""></div>
+                <h1>Harmonium</h1>
+            </div>
+            <div class="course" id="course6">
+                <div class="imgcont"><img src="/learnmusiconline.com/img/flute.jpg" alt="">
+                </div>
+
+                <h1>Flute</h1>
+            </div>
+        </div>
+    </div>
+    <div class="signup">
+        <div class="form">
+            <button onclick="signIn()">close</button>
+            <form action="backend.js" class="inner">
+                <h1>Sign up</h1>
+                <div class="coll">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="coll">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="coll">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="coll">
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="coll">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="coll">
+                    <label for="cpassword">Confirm Password: </label>
+                    <input type="password" name="cpassword" id="cpassword">
+                </div>
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </div>
+    <script src="/learnmusiconline.com/js/index.js"></script>
+</body>
+
+</html>

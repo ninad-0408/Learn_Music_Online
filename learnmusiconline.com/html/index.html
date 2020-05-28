@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learnmusiconline.com</title>
+ <link rel="stylesheet" href="../css/index.css" type='text/css'>
+</head>
+
+<body>
+    <div class="page">
+    <div class="background">
+        <header class="navi">
+            <ul>
+                <li class="logo"><img src="../img/Logo.jpg" alt=""></li>
+                <li class="lbutton" id="active"><a href="/home">Home</a></li>
+                <li class="lbutton"><a href="/course">Courses</a></li>
+                <li><input type="text" name="search" id="search" placeholder="search"></li>
+                <li class="lbutton"><a href="/about">About</a></li>
+                <li class="lbutton"><button onclick="signIn()">Sign up</button></li>
+            </ul>
+        </header>
+    </div>
+    </div>
+</div>
+<div class="signup">
+    <div class="form">
+        <button onclick="signIn()">close</button>
+        <form action="backend.js" class="inner">
+            <h1>Sign up</h1>
+            <div class="coll">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="coll">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="coll">
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="coll">
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="coll">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="coll">
+                <label for="cpassword">Confirm Password: </label>
+                <input type="password" name="cpassword" id="cpassword">
+            </div>
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
+</div>
+<script src="../js/index.js"></script>
+</body>
+
+</html>
