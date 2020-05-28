@@ -4,7 +4,9 @@
   "description": "This is my first website",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
