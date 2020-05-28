@@ -1,6 +1,8 @@
 const express=require('express');
 const app=express();
 const path=require('path');
+const dotenv=require('dotenv')
+dotenv.config();
 
 app.use('/learnmusiconline.com',express.static('learnmusiconline.com'));
 
@@ -21,6 +23,6 @@ app.get('/about',(req,res)=>{
     res.status(404).render('notfound.pug');
 })
 
-app.listen(80,()=>{
-    console.log("Listening");
-})
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, console.log(`Server started on port ${PORT}`));
